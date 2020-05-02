@@ -1,0 +1,52 @@
+[
+    {
+        "id": "1",
+        "name": "cars",
+        "image": "car.jpg"
+    },
+    {
+        "id": "2",
+        "name": "bikes",
+        "image": "bike.jpg"
+    },
+    {
+        "id": "3",
+        "name": "computers",
+        "image": "computer.jpeg"
+    },
+    {
+        "id": "4",
+        "name": "drinks",
+        "image": "drink.jpg"
+    },
+    {
+        "id": "5",
+        "name": "foods",
+        "image": "foods.jpeg"
+    },
+    {
+        "id": "6",
+        "name": "furniture",
+        "image": "furniture.jpeg"
+    },
+    {
+        "id": "7",
+        "name": "phones",
+        "image": "phone.jpeg"
+    },
+    {
+        "id": "8",
+        "name": "hotels",
+        "image": "hotel.jpeg"
+    },
+    {
+        "id": "9",
+        "name": "shirts",
+        "image": "shirt.jpeg"
+    },
+    {
+        "id": "10",
+        "name": "templates",
+        "image": "template.jpeg"
+    }
+]

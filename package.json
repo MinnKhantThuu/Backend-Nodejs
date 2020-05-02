@@ -1,0 +1,33 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Practice with sir waifer kolar",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MinnKhantThuu/Media-Backend-Nodejs-Server.git"
+  },
+  "author": "Hacky7",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MinnKhantThuu/Media-Backend-Nodejs-Server/issues"
+  },
+  "homepage": "https://github.com/MinnKhantThuu/Media-Backend-Nodejs-Server#readme",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.10",
+    "mongoose-auto-increment": "^5.0.1",
+    "mongoose-paginate": "^5.0.3",
+    "multer": "^1.4.2",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "path": "^0.12.7"
+  }
+}
