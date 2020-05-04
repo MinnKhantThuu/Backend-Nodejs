@@ -12,6 +12,7 @@ let save = (obj)=>{
     })
 }
 
+
 let all = ()=>{
     return new Promise((resolve,reject)=>{
         gallery.find({},(err,data)=>{
@@ -21,7 +22,17 @@ let all = ()=>{
     })
 }
 
+let destroy = (id) => {
+    return new Promise((resolve, reject) => {
+        gallery.deleteOne({ _id: id }, err => {
+            if (err) reject(err);
+            resolve('OK');
+        })
+    })
+}
+
 module.exports = {
     save,
-    all
+    all,
+    destroy
 }

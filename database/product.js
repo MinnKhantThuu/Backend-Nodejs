@@ -71,11 +71,21 @@ let paginate = (start,count)=>{
     })
 }
 
+let findProductsById = (id) => {
+  return new Promise((resolve,reject)=>{
+    product.find({"cat_id":id},(err,res)=>{
+        if(err) reject(err);
+        resolve(res);
+    })
+  })
+}
+
 module.exports = {
     all,
     save,
     update,
     paginate,
     destroy,
-    destroys
+    destroys,
+    findProductsById
 }

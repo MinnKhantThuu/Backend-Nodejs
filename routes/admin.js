@@ -17,6 +17,13 @@ module.exports = (express, passport) => {
 
     let router = express.Router();
 
+    router.get('/image/delete/:id',passport.authenticate('jwt', { session: false }),(req,res)=>{
+        let id = req.param('id');
+        gallery.destroy(Number(id))
+        .then(result=>res.json({con:true,msg:result}))
+        .catch(err=>res.json({con:false,msg:err}));
+    })
+
     router.post('/image/upload', passport.authenticate('jwt', { session: false }),
      upload.single('image'), (req, res, next) => {
         obj = {

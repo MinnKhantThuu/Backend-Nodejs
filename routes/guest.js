@@ -26,5 +26,12 @@ module.exports = (express) => {
         .catch(err=>res.send({con:false,msg:err}));
     })
 
+    router.get('/cat/:id',(req,res)=>{
+        let id = req.param('id');
+        product.findProductsById(id)
+        .then(result=>res.send({con:true,msg:result}))
+        .catch(err=>res.send({con:false,msg:err}));
+    })
+
     return router;
 }
